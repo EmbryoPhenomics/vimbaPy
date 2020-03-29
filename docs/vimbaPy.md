@@ -391,7 +391,8 @@ cam_P.stream(
 cam_P.stream(
 	time=None, 
 	frame_buffer=10, 
-	callback=cam_P.export_withCounter, 
+	callback=cam_P.export_withCounter,
+	frame_limit=100, 
 	path="/home/z/Documents/testFrames/")
 
 ```
