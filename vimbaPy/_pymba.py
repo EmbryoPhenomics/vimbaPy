@@ -275,7 +275,7 @@ class createInstance:
 
 		"""
 
-		if self._frame_limit == None:			
+		if self._frame_limit == None:
 
 			if frame.data.receiveStatus == -1:
 
@@ -295,7 +295,9 @@ class createInstance:
 
 				cv2.imwrite(os.path.join(self.path + filename), image)
 
-		else:
+				self._counter += 1
+
+		else: 
 
 			if self._counter <= self._frame_limit:
 
@@ -458,24 +460,21 @@ class createInstance:
 # cam = cams[0]
 # cam_1 = createInstance(cam)
 
-# print(cam_1.getFeatureInfo(feature="ExposureTime"))
+# # cam_1.stream(
+# # 	time=5,
+# # 	frame_buffer=100,
+# # 	callback=cam_1.display)
+
+# # for i in range(1, 5, 1):	
+
+# # 	print("Stream: " + str(i))
 
 # cam_1.stream(
-# 	time=5,
+# 	time=None,
+# 	callback=cam_1.export,
 # 	frame_buffer=100,
-# 	callback=cam_1.display)
+# 	frame_limit=100,
+# 	path="/home/z/Documents/testFrames/")
 
-# for i in range(1, 5, 1):	
-
-# 	print("Stream: " + str(i))
-
-# 	cam_1.stream(
-# 		time=None,
-# 		callback=cam_1.export,
-# 		frame_buffer=100,
-# 		frame_limit=400,
-# 		features={"Width": 800, "Height": 480},
-# 		path="/home/z/Documents/testFrames/")
-
-# 	sleep(1)
+# 	# sleep(1)
 
