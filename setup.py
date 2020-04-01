@@ -13,8 +13,7 @@ setup(name='vimbaPy',
           'vimbaPy',
       ],
       install_requires=[
-      	   'pymba', 
-      	   'opencv-python'
+      	   'pymba'
       ]
 )
 
