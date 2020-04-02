@@ -446,8 +446,8 @@ class createInstance:
 				finally:
 					camera.stop_frame_acquisition()
 
-			# Required to stop the session crashing
-			sleep(0.2)
+			# To prevent potential session crashes
+			sleep(0.02)
 
 			camera.disarm()
 			camera.close()
