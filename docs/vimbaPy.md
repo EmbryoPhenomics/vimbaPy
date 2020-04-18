@@ -144,7 +144,7 @@ NA
 **Example usage**
 
 ``` python
-from vimbaPy import _pymba, VimbaPython
+from vimbaPy import _pymba, _VimbaPython
 
 # For pymba
 cameras_P = _pymba.getCameraID()
@@ -168,7 +168,7 @@ Create an independent instance for operating a given camera.
 **Example usage**
 
 ``` python
-from vimbaPy import _pymba, VimbaPython
+from vimbaPy import _pymba, _VimbaPython
 
 # For pymba
 cameras_P = _pymba.getCameraID()
